@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TAN KA</title>
+<title>TAN KA - Street Food</title>
 
 <style>
+
 *{
 box-sizing:border-box;
 font-family:Arial,sans-serif;
@@ -19,98 +20,197 @@ color:white;
 }
 
 header{
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+url("logo-tanka.png");
+background-size:cover;
+background-position:center;
 text-align:center;
-padding:50px 20px;
-background:linear-gradient(135deg,#222,#000);
+padding:30px 15px;
+border-bottom:5px solid #e87516;
+}
+
+.logo{
+width:220px;
+max-width:90%;
 }
 
 h1{
 font-size:45px;
-color:#ffc400;
+color:#ff7a18;
+margin:10px;
+text-shadow:3px 3px #000;
 }
 
-p{
+.slogan{
 font-size:18px;
+color:#ddd;
 }
 
-section{
-padding:30px;
-text-align:center;
+
+.container{
+padding:20px;
 }
+
+
+.title{
+color:#ff7a18;
+font-size:30px;
+border-left:8px solid #ff7a18;
+padding-left:10px;
+}
+
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
 
 .card{
 background:#222;
-padding:25px;
-border-radius:20px;
+border:2px solid #444;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+
+.card:hover{
+transform:scale(1.03);
+border-color:#ff7a18;
 }
 
-.gallery img{
+
+.card img{
 width:100%;
-border-radius:20px;
+height:200px;
+object-fit:cover;
 }
 
-button{
-background:#ffc400;
-border:0;
-padding:15px 30px;
-border-radius:30px;
-font-weight:bold;
+
+.card h2{
+color:#ff7a18;
+padding:10px;
 }
+
+
+.card p{
+padding:0 10px 15px;
+color:#ddd;
+}
+
+
+.about{
+background:#1b1b1b;
+padding:25px;
+margin-top:30px;
+border-radius:15px;
+border:1px solid #555;
+}
+
 
 footer{
 text-align:center;
 padding:20px;
+background:#000;
 color:#aaa;
+margin-top:30px;
 }
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <header>
-<h1>🌴 TAN KA 🌴</h1>
-<p>Hương vị khác biệt - Trải nghiệm đáng nhớ</p>
-<button>Xem ảnh</button>
+
+<img class="logo" src="logo-tanka.png">
+
+<h1>TAN KA</h1>
+
+<p class="slogan">
+STREET FOOD • ĐẬM VỊ - VUI MIỆNG
+</p>
+
 </header>
 
-<section>
+
+
+<div class="container">
+
+
+<h2 class="title">
+MENU TAN KA
+</h2>
+
+
+<div class="menu">
+
+
 <div class="card">
-<h2>Giới thiệu</h2>
+<img src="tom-sot-thai.jpg">
+<h2>Tôm Sốt Thái</h2>
+<p>Tôm tươi kết hợp sốt Thái cay chua đậm vị.</p>
+</div>
+
+
+<div class="card">
+<img src="goi-bo.jpg">
+<h2>Gỏi Bò Ngũ Sắc</h2>
+<p>Thịt bò mềm, rau củ nhiều màu, vị ngon khó quên.</p>
+</div>
+
+
+<div class="card">
+<img src="hai-san.jpg">
+<h2>Hải Sản Tan Ka</h2>
+<p>Món ăn đường phố phong cách riêng của Tan Ka.</p>
+</div>
+
+
+<div class="card">
+<img src="mon-moi.jpg">
+<h2>Món Mới</h2>
+<p>Cập nhật món ngon mỗi ngày.</p>
+</div>
+
+
+</div>
+
+
+
+<div class="about">
+
+<h2 class="title">
+VỀ TAN KA
+</h2>
+
 <p>
-Chào mừng bạn đến với Tan Ka.
-Nơi chia sẻ những món ăn đặc sắc và những khoảnh khắc tuyệt vời.
+Tan Ka mang phong cách street food hiện đại,
+kết hợp hương vị mạnh mẽ và cá tính đường phố.
 </p>
-</div>
-</section>
 
-<section>
-<h2>📸 Hình ảnh</h2>
+<p>
+🔥 Ngon - Chất - Đậm vị
+</p>
 
-<div class="gallery">
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
 </div>
 
-</section>
 
-<section>
-<div class="card">
-<h2>📍 Liên hệ</h2>
-<p>Facebook | Zalo | Đặt hàng</p>
 </div>
-</section>
+
 
 <footer>
-© 2026 TAN KA
+
+© 2026 TAN KA STREET FOOD
+
 </footer>
+
 
 </body>
 </html>
